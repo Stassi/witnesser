@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "witnesser"
+version = "0.0.1"
+description = "Automatic speech recognition (ASR) implementation"
+authors = ["Andreas Stassivik <andreas@stassi.net>"]
+license = "MPL-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
