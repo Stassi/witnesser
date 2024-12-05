@@ -9,6 +9,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 llvmlite = "^0.43.0"
 numba = "^0.60.0"
+openai-whisper = "20240930"
 python = "~3.11"
 torch = { version = "*", source = "pytorch" }
 torchaudio = { version = "*", source = "pytorch" }
