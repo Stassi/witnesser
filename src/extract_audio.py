@@ -39,7 +39,7 @@ def extract_audio(video_file: str):
     )
 
     if not audio_codec:
-        raise ValueError(f"No audio stream found in file: {video_file}")
+        raise ValueError(f'No audio stream found in file: {video_file}')
 
     output_file = audio_output_path(audio_codec, input_file=video_file)
 
@@ -48,7 +48,7 @@ def extract_audio(video_file: str):
         .input(video_file)
         .output(
             output_file,
-            acodec="copy",
+            acodec='copy',
             vn=None
         ).run(overwrite_output=True)
     )

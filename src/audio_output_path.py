@@ -10,12 +10,12 @@ def audio_output_path(audio_codec: str, input_file: str) -> str:
     }.get(audio_codec)
 
     if not file_extension:
-        raise ValueError(f"Unsupported audio codec: {audio_codec}")
+        raise ValueError(f'Unsupported audio codec: {audio_codec}')
 
     base_name = os.path.splitext(os.path.basename(input_file))[0]
 
-    cache_dir = os.path.join("cache", base_name)
+    cache_dir = os.path.join('cache', base_name)
 
     os.makedirs(cache_dir, exist_ok=True)
 
-    return os.path.join(cache_dir, f"{base_name}.{file_extension}")
+    return os.path.join(cache_dir, f'{base_name}.{file_extension}')
