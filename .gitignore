@@ -162,6 +162,7 @@ cython_debug/
 .idea/
 
 # witnesser (project input/output)
+cache/
 output/
 speech/
 transcript/
