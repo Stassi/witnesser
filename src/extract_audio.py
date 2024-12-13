@@ -2,7 +2,7 @@ import ffmpeg
 from .audio_output_path import audio_output_path
 
 
-def extract_audio(video_file: str, output_directory: str):
+def extract_audio(video_file: str, output_directory: str) -> str:
     audio_codec = next(
         (stream['codec_name'] for stream in ffmpeg.probe(video_file)['streams'] if stream['codec_type'] == 'audio'),
         None
