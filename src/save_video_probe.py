@@ -10,8 +10,9 @@ if TYPE_CHECKING:
 def save_video_probe(video_file: str):
     probed_video = ffmpeg.probe(video_file)
 
-    base_name = os.path.splitext(os.path.basename(video_file))[0]
-    cache_dir = os.path.join('cache', base_name)
+    base_name: str = os.path.splitext(os.path.basename(video_file))[0]
+    cache_dir: str = os.path.join('cache', base_name)
+
     os.makedirs(cache_dir, exist_ok=True)
 
     with open(
