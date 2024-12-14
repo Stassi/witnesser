@@ -16,12 +16,12 @@ def save_video_probe(video_file: str):
 
     f: SupportsWrite[str]
     with open(
-        os.path.join(
+        encoding='utf-8',
+        file=os.path.join(
             cache_dir,
             f'{base_name}.av.json'
         ),
-        'w',
-        encoding='utf-8'
+        mode='w',
     ) as f:
         json.dump(
             probed_video,
