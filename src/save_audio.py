@@ -3,7 +3,7 @@ from .audio_output_path import audio_output_path
 from .save_video_probe import save_video_probe
 
 
-def extract_audio(video_file: str):
+def save_audio(video_file: str):
     probed_video = save_video_probe(video_file)
 
     audio_codec = next(

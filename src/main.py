@@ -1,5 +1,5 @@
-from .extract_audio import extract_audio
+from .save_audio import save_audio
 
 
 def main(video_file: str):
-    extract_audio(video_file)
+    save_audio(video_file)
