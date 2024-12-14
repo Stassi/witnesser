@@ -14,7 +14,6 @@ def save_video_probe(video_file: str):
     cache_dir = os.path.join('cache', base_name)
     os.makedirs(cache_dir, exist_ok=True)
 
-    f: SupportsWrite[str]
     with open(
         encoding='utf-8',
         file=os.path.join(
@@ -23,6 +22,7 @@ def save_video_probe(video_file: str):
         ),
         mode='w',
     ) as f:
+        f: SupportsWrite[str]
         json.dump(
             probed_video,
             f,
