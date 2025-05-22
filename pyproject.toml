@@ -20,7 +20,7 @@ yt-dlp = "2025.5.22"
 [[tool.poetry.source]]
 name = "pytorch"
 priority = "explicit"
-url = "https://download.pytorch.org/whl/cu124"
+url = "https://download.pytorch.org/whl/cu128"
 
 [build-system]
 requires = ["poetry-core"]
